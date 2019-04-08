@@ -16,6 +16,7 @@ typedef struct login {
   char password[20];
 } LOGIN;
 
+void list(LOGIN* list[], int count);
 int load_file(LOGIN* list[], char* filename);
 void join(LOGIN* list[], int count);
 int login(LOGIN* list[], int count);
